@@ -1,6 +1,7 @@
 
 import streamlit as st
 
+
 def User_info():
     st.sidebar.title('User Profile')
     

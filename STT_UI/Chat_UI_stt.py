@@ -3,7 +3,7 @@ import time
 import streamlit as st
 import speech_recognition as sr
 import os
-from UserInfo import User_info
+from STT_UI.UserInfo import User_info
 
 start_chat = User_info()
 

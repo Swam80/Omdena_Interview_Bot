@@ -1,2 +1,2 @@
 streamlit
-speech_recognition
+SpeechRecognition == 3.10.1

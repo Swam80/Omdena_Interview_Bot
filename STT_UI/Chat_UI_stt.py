@@ -3,15 +3,13 @@ import time
 import streamlit as st
 import speech_recognition as sr
 import os
-from STT_UI.UserInfo import User_info
+from UserInfo import User_info
 
 start_chat = User_info()
 
 def display_chat(start_chat):
+    
     st.title("Omdena Interview Bot")
-
-    st.subheader("Please fill the user profile first and then click on Start Interview button")
-
 
     # Initialize recording state
     if "recording" not in st.session_state:

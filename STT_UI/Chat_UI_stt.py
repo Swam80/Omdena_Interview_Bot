@@ -8,7 +8,7 @@ from UserInfo import User_info
 start_chat = User_info()
 
 def display_chat(start_chat):
-    
+
     st.title("Omdena Interview Bot")
 
     # Initialize recording state

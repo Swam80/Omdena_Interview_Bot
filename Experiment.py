@@ -3,10 +3,12 @@ import time
 import streamlit as st
 
 def User_info():
-    st.sidebar.title('Omdena Chat Bot for Interview')
-    st.sidebar.subheader('User Profile')
+    st.sidebar.title('User Profile')
+    
     name = st.sidebar.text_input('Name')
-    position = st.sidebar.text_input('Position')
+    
+    position_options=['Select','Customer Service Representative', 'Sales Manager', 'Marketing Manager ','Nurse','Medical Assistance']
+    position = st.sidebar.selectbox('Position', position_options, index=0)
 
     experience_options = ['Select', 'Entry Level', 'Intermediate', 'Experienced']
     experience = st.sidebar.selectbox('Experience', experience_options, index=0)
@@ -70,3 +72,5 @@ def display_chat(start_chat):
 
 start_chat = User_info()
 display_chat(start_chat)
+
+
